@@ -1,7 +1,7 @@
 import math
 
 # print the name of the auto shop
-print('Dany\'s auto shop services')
+print('Davy\'s auto shop services')
 
 # make and print a list of automotive services
 auto_services = {
@@ -29,27 +29,27 @@ print()
 if service_one in auto_services:
     price_one = f'${auto_services[service_one]}'
 else:
-    price_one = 'no service'
+    price_one = 'No service'
 if service_two in auto_services:
     price_two = f'${auto_services[service_two]}'
 else:
-    price_two = 'no service'
+    price_two = 'No service'
 
 if (price_one == 'no service') and (price_two == 'no service'):
     price_total = 0
-elif price_one == 'no service':
+elif price_one == 'No service':
     price_total = auto_services[service_two]
-elif price_two == 'no service':
+elif price_two == 'No service':
     price_total = auto_services[service_one]
 else:
     price_total = auto_services[service_one] + auto_services[service_two]
 
 # do some more calculating to make output cleaner
-if price_one == 'no service':
+if price_one == 'No service':
     service_price_one = price_one
 else:
     service_price_one = f"{service_one}, {price_one}"
-if price_two == 'no service':
+if price_two == 'No service':
     service_price_two = price_two
 else:
     service_price_two = f"{service_two}, {price_two}"
