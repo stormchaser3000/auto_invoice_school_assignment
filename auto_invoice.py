@@ -35,7 +35,7 @@ if service_two in auto_services:
 else:
     price_two = 'No service'
 
-if (price_one == 'no service') and (price_two == 'no service'):
+if ('No service' in price_one) and ('No service' in price_two):
     price_total = 0
 elif price_one == 'No service':
     price_total = auto_services[service_two]
